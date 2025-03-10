@@ -25,4 +25,4 @@ $$
 \text{ppv} = \frac{(1 - \text{falsenegrate}) \cdot \text{prevalence}}{\text{falseposrate} \cdot (1 - \text{prevalence}) + (1 - \text{falsenegrate}) \cdot \text{prevalence}}
 $$
 
-However, the derivative of ppv with respect to falsenegrate (for short, p) is negative, such that the max is attained at $p=0$, which yields around 2%.
+However, the derivative of ppv with respect to falsenegrate (for short, p) is negative, such that the max is attained at p=0, which yields around 2%.
