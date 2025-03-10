@@ -20,7 +20,9 @@ This relates to a [post on X](https://x.com/jeremykauffman/status/18980116865581
 > *"If a test to detect a disease whose prevalence is 1/1000 has a false positive rate of 5%, what is the chance that a person found to have a positive result actually has the disease?"*
 
 I claim one cannot solve the stated problem due to the unspecified false negative rate. I've provided a [Mathematica notebook](https://github.com/rogard/nb/blob/main/hhs-controv.ipynb) where state, outcome, and ppv should read as "has the disease", "result of the test", and "chance that a person found to have a positive result actually has the disease", respectively.
+
 $$
 \text{ppv} = \frac{(1 - \text{falsenegrate}) \cdot \text{prevalence}}{\text{falseposrate} \cdot (1 - \text{prevalence}) + (1 - \text{falsenegrate}) \cdot \text{prevalence}}
 $$
+
 However, the derivative of ppv with respect to falsenegrate (for short, p) is negative, such that the max is attained at p=0, which yields around 2%.
